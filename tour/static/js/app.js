@@ -48,3 +48,4 @@ run(function($rootScope, $location, mapping) {
         $location.path(m);
     });         
 });
+

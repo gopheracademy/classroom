@@ -43,6 +43,14 @@ It determines how the formatting actions are rendered.
   <p class="link"><a href="{{.URL}}" target="_blank">{{style .Label}}</a></p>
 {{end}}
 
+{{define "video"}}
+<div id="video" class="video">
+  <video {{with .Height}} height="{{.}}"{{end}}{{with .Width}} width="{{.}}"{{end}} controls>
+    <source src="{{.URL}}" type="{{.SourceType}}">
+  </video>
+</div>
+{{end}}
+
 {{define "html"}}{{.HTML}}{{end}}
 
 {{define "newline"}}

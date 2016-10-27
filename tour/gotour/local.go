@@ -109,6 +109,7 @@ func main() {
 	// Keep these static file handlers in sync with ../app.yaml.
 	static := http.FileServer(http.Dir(root))
 	http.Handle("/content/img/", static)
+	http.Handle("/content/videos/", static)
 	http.Handle("/static/", static)
 	imgDir := filepath.Join(root, "static", "img")
 	http.Handle("/favicon.ico", http.FileServer(http.Dir(imgDir)))
