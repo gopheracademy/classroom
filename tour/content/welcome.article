@@ -6,6 +6,8 @@ https://golang.org
 
 * Hello, 世界
 
+.video /content/videos/VID00603.MP4 video/mp4 400 600
+
 Welcome to a tour of the [[https://golang.org/][Go programming language]].
 
 The tour is divided into a list of modules that you can
